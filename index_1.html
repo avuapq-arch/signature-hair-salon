@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signature Hair Salon | Edinburgh Barbers</title>
+<meta name="description" content="Signature Hair Salon, 7 South Clerk Street, Newington, Edinburgh. Men's haircuts, fades, beard trims and hot towel shaves since 2019.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Signature Hair Salon",
+  "image": "https://avatar.setmore.com/files/img/fjU3wPqfW8rp/274f2119-5ad0-4704-95c3-4ac7df39d62c.png",
+  "telephone": "+441312738355",
+  "priceRange": "£10-£25",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7 South Clerk Street",
+    "addressLocality": "Edinburgh",
+    "addressRegion": "Scotland",
+    "postalCode": "EH8 9JD",
+    "addressCountry": "GB"
+  },
+  "url": "https://signaturebarber3jpr.setmore.com",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" }
+  ],
+  "description": "Signature Hair Salon is a barber shop in Newington, Edinburgh, open since 2019. Services include haircuts, skin fades, beard trims and hot towel shaves.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Men's Haircut"},"price":"17","priceCurrency":"GBP"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Skin Fade"},"price":"20","priceCurrency":"GBP"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Zero Fade"},"price":"18","priceCurrency":"GBP"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Beard Trim"},"price":"10","priceCurrency":"GBP"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Hot Shave & Hot Towel"},"price":"20","priceCurrency":"GBP"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Men's Long Haircut"},"price":"25","priceCurrency":"GBP"}
+    ]
+  }
+}
+</script>
+<style>
+  :root{
+    --ink:#14181B;
+    --ink-2:#1D2226;
+    --parchment:#E8E1CF;
+    --parchment-2:#F1ECDE;
+    --copper:#A85C32;
+    --copper-dark:#7C4322;
+    --bottle:#2F4538;
+    --line: rgba(232,225,207,0.16);
+    --line-dark: rgba(20,24,27,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+  }
+  h1,h2,h3,.serif{ font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em; }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:920px; margin:0 auto; padding:0 28px; }
+
+  header{
+    position:sticky; top:0; z-index:20;
+    background:var(--ink); color:var(--parchment);
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 28px; max-width:920px; margin:0 auto;
+    gap:16px;
+  }
+  .brand{ font-family:'Fraunces', serif; font-size:19px; font-weight:600; }
+  nav{ display:flex; gap:22px; font-size:14px; }
+  nav a{ opacity:0.82; }
+  nav a:hover{ opacity:1; }
+  .header-actions{ display:flex; align-items:center; gap:16px; font-size:14px; }
+  .btn{
+    display:inline-block;
+    background:var(--copper);
+    color:var(--parchment-2);
+    padding:10px 20px;
+    border-radius:2px;
+    font-size:14px;
+    font-weight:500;
+    border:1px solid var(--copper);
+    transition:background .15s ease;
+  }
+  .btn:hover{ background:var(--copper-dark); }
+
+  .hero{
+    padding:96px 0 76px;
+    border-bottom:1px solid var(--line-dark);
+  }
+  .hero .eyebrow{
+    font-size:14px; color:var(--copper-dark); margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(38px,6vw,58px);
+    line-height:1.05;
+    max-width:12ch;
+    margin-bottom:22px;
+  }
+  .hero p.lead{
+    font-size:18px; max-width:46ch; color:#33362f;
+    margin-bottom:34px;
+  }
+  .hero-facts{
+    display:flex; flex-wrap:wrap; gap:34px 48px;
+    padding-top:30px; margin-top:8px;
+    border-top:1px solid var(--line-dark);
+  }
+  .fact-label{ font-size:13px; color:#6b6a5f; margin-bottom:6px; }
+  .fact-value{ font-size:16px; font-weight:500; }
+  .hero-cta{ display:flex; gap:16px; margin-top:6px; flex-wrap:wrap; }
+  .btn-outline{
+    display:inline-block;
+    padding:10px 20px;
+    border:1px solid var(--ink);
+    border-radius:2px;
+    font-size:14px; font-weight:500;
+  }
+
+  section{ padding:70px 0; border-bottom:1px solid var(--line-dark); }
+  .section-head{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:38px; gap:20px; flex-wrap:wrap;}
+  .section-head h2{ font-size:30px; }
+  .section-head p{ color:#6b6a5f; font-size:15px; max-width:38ch; }
+
+  .menu-single{ max-width:560px; }
+  .menu-item{
+    display:flex; align-items:baseline; gap:8px;
+    padding:12px 0;
+    font-size:16px;
+    border-bottom:1px solid var(--line-dark);
+  }
+  .menu-item:last-child{ border-bottom:none; }
+  .menu-item .name{ white-space:nowrap; }
+  .menu-item .dots{
+    flex:1; border-bottom:1px dotted #a8a596;
+    transform:translateY(-4px);
+  }
+  .menu-item .price{ font-weight:600; white-space:nowrap; }
+  .menu-item .dur{ font-size:12.5px; color:#8b8977; display:block; margin-top:2px; }
+
+  .about-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
+  .about-grid p{ margin-bottom:16px; color:#33362f; font-size:16px; max-width:52ch; }
+  .stat-block{ background:var(--ink); color:var(--parchment); padding:28px 26px; border-radius:2px; }
+  .stat-block .num{ font-family:'Fraunces',serif; font-size:36px; font-weight:600; color:var(--copper); }
+  .stat-block .label{ font-size:13.5px; color:#c9c4b2; margin-top:4px; }
+  .stat-block + .stat-block{ margin-top:14px; }
+
+  .visit-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; }
+  .hours-table{ width:100%; font-size:15px; }
+  .hours-table tr{ border-bottom:1px solid var(--line-dark); }
+  .hours-table td{ padding:9px 0; }
+  .hours-table td:last-child{ text-align:right; font-weight:500; }
+  .hours-table .closed{ color:#a8a596; }
+  .map-wrap{ border-radius:2px; overflow:hidden; border:1px solid var(--line-dark); height:260px; }
+  .map-wrap iframe{ width:100%; height:100%; border:0; }
+  .addr-line{ margin-top:14px; font-size:14.5px; color:#4a4a41; }
+
+  footer{
+    padding:44px 0 56px;
+    background:var(--bottle); color:#e3ead9;
+  }
+  .footer-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:14px; }
+  .footer-row .brand{ color:#e3ead9; }
+  .footer-links{ display:flex; gap:20px; opacity:0.85; }
+
+  @media (max-width:720px){
+    .header-row{ padding:14px 20px; }
+    nav{ display:none; }
+    .hero{ padding:60px 0 48px; }
+    .wrap{ padding:0 20px; }
+    .about-grid, .visit-grid{ grid-template-columns:1fr; gap:40px; }
+    .hero-facts{ gap:22px 32px; }
+    section{ padding:52px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-row">
+    <div class="brand">Signature Hair Salon</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+441312738355">0131 273 8355</a>
+      <a class="btn" href="https://signaturebarber3jpr.setmore.com/book">Book now</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Newington, Edinburgh · Barbering since 2019</div>
+    <h1>Sharp fades, steady hands.</h1>
+    <p class="lead">A neighbourhood barbershop on South Clerk Street — haircuts, fades, beard work and hot towel shaves, done properly every time.</p>
+    <div class="hero-cta">
+      <a class="btn" href="https://signaturebarber3jpr.setmore.com/book">Book now</a>
+      <a class="btn-outline" href="#services">See prices</a>
+    </div>
+    <div class="hero-facts">
+      <div>
+        <div class="fact-label">Address</div>
+        <div class="fact-value">7 South Clerk Street, EH8 9JD</div>
+      </div>
+      <div>
+        <div class="fact-label">Phone</div>
+        <div class="fact-value">0131 273 8355</div>
+      </div>
+      <div>
+        <div class="fact-label">Open</div>
+        <div class="fact-value">Tue–Sat, 9am–6pm</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Prices</h2>
+      <p>Prices start from here — the final price can depend on hair length or condition.</p>
+    </div>
+    <div class="menu-single">
+      <div class="menu-item"><span class="name">Student haircut<span class="dur">30 mins</span></span><span class="dots"></span><span class="price">£15</span></div>
+      <div class="menu-item"><span class="name">Men's haircut<span class="dur">30 mins</span></span><span class="dots"></span><span class="price">£17</span></div>
+      <div class="menu-item"><span class="name">Kids haircut (under 10)<span class="dur">30 mins</span></span><span class="dots"></span><span class="price">£14</span></div>
+      <div class="menu-item"><span class="name">OAP (over 65)<span class="dur">30 mins</span></span><span class="dots"></span><span class="price">£14</span></div>
+      <div class="menu-item"><span class="name">All-over, clippers only<span class="dur">20 mins</span></span><span class="dots"></span><span class="price">£13</span></div>
+      <div class="menu-item"><span class="name">Skin fade<span class="dur">35 mins</span></span><span class="dots"></span><span class="price">£20</span></div>
+      <div class="menu-item"><span class="name">Zero fade<span class="dur">30 mins</span></span><span class="dots"></span><span class="price">£18</span></div>
+      <div class="menu-item"><span class="name">Scissors cut<span class="dur">30 mins</span></span><span class="dots"></span><span class="price">£18</span></div>
+      <div class="menu-item"><span class="name">Men's long haircut<span class="dur">35 mins</span></span><span class="dots"></span><span class="price">£25</span></div>
+      <div class="menu-item"><span class="name">Beard trim<span class="dur">15 mins</span></span><span class="dots"></span><span class="price">£10</span></div>
+      <div class="menu-item"><span class="name">Beard trim and line up<span class="dur">20 mins</span></span><span class="dots"></span><span class="price">£12</span></div>
+      <div class="menu-item"><span class="name">Hot shave and hot towel<span class="dur">35 mins</span></span><span class="dots"></span><span class="price">£20</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <h2 style="font-size:30px; margin-bottom:22px;">In Newington since 2019</h2>
+        <p>Signature Hair Salon has been on South Clerk Street for years. Our customers range from a quick trim between classes or a shift to regulars who come in every few weeks for a skin fade.</p>
+        <p>Book online in a couple of taps, no need to call or walk in.</p>
+      </div>
+      <div>
+        <div class="stat-block">
+          <div class="num">2019</div>
+          <div class="label">Open since</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">£10–£25</div>
+          <div class="label">Price range</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Visit us</h2>
+    </div>
+    <div class="visit-grid">
+      <div>
+        <table class="hours-table">
+          <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+          <tr><td>Monday</td><td class="closed">Closed</td></tr>
+          <tr><td>Tuesday</td><td>9am–6pm</td></tr>
+          <tr><td>Wednesday</td><td>9am–6pm</td></tr>
+          <tr><td>Thursday</td><td>9am–6pm</td></tr>
+          <tr><td>Friday</td><td>9am–6pm</td></tr>
+          <tr><td>Saturday</td><td>9am–6pm</td></tr>
+        </table>
+        <div class="addr-line">7 South Clerk Street, Edinburgh EH8 9JD<br>0131 273 8355</div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDjM_kXtBbZQ_fKSuQuWkxPBglewSLcBW0&q=Signature+Hair+Salon%2C+7+South+Clerk+Street%2C+Edinburgh%2C+Scotland%2C+EH8+9JD&zoom=15&language=en"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="brand">Signature Hair Salon</div>
+    <div class="footer-links">
+      <a href="tel:+441312738355">0131 273 8355</a>
+      <a href="https://signaturebarber3jpr.setmore.com/book">Book now</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
