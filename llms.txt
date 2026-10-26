@@ -10,7 +10,6 @@
 - Payment: cash, credit and debit cards, Apple Pay, Google Pay
 - Booking: https://signaturebarber3jpr.setmore.com/book
 - Google Maps: https://maps.google.com/?cid=12866875449387239371
-- Treatwell: https://www.treatwell.co.uk/place/signature-hair-salon-1/
 - Previously listed as: Signature Barber
 - Area: Newington / Southside, a short walk from the University of Edinburgh's central campus
 
