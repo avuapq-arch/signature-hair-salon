@@ -42,6 +42,7 @@
     "target": "https://signaturebarber3jpr.setmore.com/book"
   },
   "priceRange": "£13-£30",
+  "amenityFeature": [{"@type":"LocationFeatureSpecification","name":"Free Wi-Fi","value":true}],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "7 South Clerk Street",
@@ -87,7 +88,10 @@
     {"@type":"Question","name":"Is there a barber near the University of Edinburgh with a student discount?","acceptedAnswer":{"@type":"Answer","text":"Yes. Signature Hair Salon is at 7 South Clerk Street in Newington, a short walk from the University of Edinburgh's central campus. A men's student haircut is £18 and a women's student short haircut is £22."}},
     {"@type":"Question","name":"Do you do beard trims and hot towel shaves?","acceptedAnswer":{"@type":"Answer","text":"Yes. A beard trim and line up is £13, an Italian beard is £23, and a hot shave with hot towel is £23."}},
     {"@type":"Question","name":"Do you cut women's hair?","acceptedAnswer":{"@type":"Answer","text":"Yes. A women's short haircut is £25, or £22 for students."}},
-    {"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Book online at https://signaturebarber3jpr.setmore.com/book or call 0131 273 8355."}},
+    {"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Book online 24/7 at https://signaturebarber3jpr.setmore.com/book or call 0131 273 8355. Walk-ins are welcome too."}},
+    {"@type":"Question","name":"Can I walk in without booking?","acceptedAnswer":{"@type":"Answer","text":"Yes. Walk-ins are welcome, or you can book online 24/7."}},
+    {"@type":"Question","name":"What if I'm not happy with my haircut?","acceptedAnswer":{"@type":"Answer","text":"If you're not 100% happy, we'll fix it free within 5 days."}},
+    {"@type":"Question","name":"Do you have Wi-Fi?","acceptedAnswer":{"@type":"Answer","text":"Yes. Free Wi-Fi is available in the shop."}},
     {"@type":"Question","name":"Can I pay by card?","acceptedAnswer":{"@type":"Answer","text":"Yes. We accept cash, credit and debit cards, Apple Pay and Google Pay."}},
     {"@type":"Question","name":"When are you open?","acceptedAnswer":{"@type":"Answer","text":"Tuesday to Saturday, 9am to 6pm. Closed on Sunday and Monday."}}
   ]
@@ -106,7 +110,7 @@
     --line-dark: rgba(20,24,27,0.14);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth; scroll-padding-top:90px;}
   body{
     background:var(--parchment);
     color:var(--ink);
@@ -202,6 +206,21 @@
   .menu-item .dur{ font-size:13.5px; color:#6b6a5f; text-align:right; white-space:nowrap; }
   .menu-item .price{ font-weight:600; font-size:17px; text-align:right; white-space:nowrap; }
 
+  .promise-title{ font-size:clamp(32px,5vw,44px); line-height:1.1; margin-bottom:26px; }
+  .promise-title em{ color:var(--copper-dark); font-weight:500; }
+  .trust-row{ display:flex; flex-wrap:wrap; gap:14px; margin-bottom:38px; }
+  .trust-card{ display:flex; align-items:center; gap:12px; padding:13px 18px; border-radius:2px; border:1px solid var(--line-dark); }
+  a.trust-card{ background:var(--ink); color:var(--parchment); border-color:var(--ink); }
+  .trust-score{ font-family:'Fraunces',serif; font-size:26px; font-weight:600; line-height:1; }
+  .trust-stars{ color:var(--copper); letter-spacing:2px; font-size:17px; }
+  .trust-text{ font-size:14px; line-height:1.35; }
+  .trust-text strong{ display:block; font-size:15px; }
+  .feature-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px 56px; margin-bottom:38px; }
+  .feature-grid h3{ font-size:20px; margin-bottom:6px; }
+  .feature-grid p{ color:#33362f; font-size:15.5px; max-width:42ch; }
+  .perk-list{ display:flex; flex-wrap:wrap; gap:12px 34px; list-style:none; padding-top:24px; border-top:1px solid var(--line-dark); font-weight:500; font-size:15.5px; }
+  .perk-list li::before{ content:"✓"; color:var(--copper-dark); font-weight:700; margin-right:8px; }
+
   .about-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
   .about-grid p{ margin-bottom:16px; color:#33362f; font-size:16px; max-width:52ch; }
   .stat-block{ background:var(--ink); color:var(--parchment); padding:28px 26px; border-radius:2px; }
@@ -248,6 +267,8 @@
     .hero{ padding:60px 0 48px; }
     .wrap{ padding:0 20px; }
     .about-grid, .visit-grid{ grid-template-columns:1fr; gap:40px; }
+    .feature-grid{ grid-template-columns:1fr; gap:22px; }
+    .trust-card{ width:100%; }
     .hero-facts{ gap:22px 32px; }
     section{ padding:52px 0; }
   }
@@ -295,6 +316,34 @@
         <div class="fact-value">Tue–Sat, 9am–6pm</div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2 class="promise-title">A proper haircut. <em>Never rushed.</em></h2>
+    <div class="trust-row">
+      <a class="trust-card" href="https://maps.google.com/?cid=12866875449387239371">
+        <span class="trust-score">4.9</span>
+        <span class="trust-stars" aria-hidden="true">★★★★★</span>
+        <span class="trust-text">155+ Google reviews</span>
+      </a>
+      <div class="trust-card">
+        <span class="trust-text"><strong>Not 100% happy?</strong>We'll fix it free within 5 days.</span>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div><h3>We listen first</h3><p>We hear what you want before we start.</p></div>
+      <div><h3>Expert haircuts</h3><p>Skin fades, scissor cuts, beard trims.</p></div>
+      <div><h3>Hot towel finish</h3><p>A warm towel to finish, free with every service except kids' haircuts.</p></div>
+      <div><h3>Take your time</h3><p>Your slot is your time. We never cut against the clock.</p></div>
+    </div>
+    <ul class="perk-list">
+      <li>Book online 24/7</li>
+      <li>Walk-ins welcome</li>
+      <li>Cash or card</li>
+      <li>Free Wi-Fi</li>
+    </ul>
   </div>
 </section>
 
@@ -360,7 +409,7 @@
       <div>
         <h2 style="font-size:30px; margin-bottom:22px;">In Newington since 2019</h2>
         <p>Signature Hair Salon has been on South Clerk Street for years. Our customers range from a quick trim between classes or a shift to regulars who come in every few weeks for a skin fade.</p>
-        <p>Book online in a couple of taps, no need to call or walk in.</p>
+        <p>Book online in a couple of taps at any time, or just walk in.</p>
       </div>
       <div>
         <div class="stat-block">
@@ -408,7 +457,19 @@
       </details>
       <details>
         <summary>How do I book?</summary>
-        <p>Book online at <a href="https://signaturebarber3jpr.setmore.com/book">signaturebarber3jpr.setmore.com</a> or call 0131 273 8355.</p>
+        <p>Book online 24/7 at <a href="https://signaturebarber3jpr.setmore.com/book">signaturebarber3jpr.setmore.com</a> or call 0131 273 8355. Walk-ins are welcome too.</p>
+      </details>
+      <details>
+        <summary>Can I walk in without booking?</summary>
+        <p>Yes. Walk-ins are welcome, or you can book online 24/7.</p>
+      </details>
+      <details>
+        <summary>What if I'm not happy with my haircut?</summary>
+        <p>If you're not 100% happy, we'll fix it free within 5 days.</p>
+      </details>
+      <details>
+        <summary>Do you have Wi-Fi?</summary>
+        <p>Yes. Free Wi-Fi is available in the shop.</p>
       </details>
       <details>
         <summary>Can I pay by card?</summary>
