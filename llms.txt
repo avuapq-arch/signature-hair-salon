@@ -1,6 +1,6 @@
 # Signature Hair Salon
 
-> A barber shop in Newington, Edinburgh, offering men's haircuts, skin fades, beard trims and hot towel shaves. Open since 2019.
+> A barber shop in Newington, Edinburgh, offering men's haircuts, skin fades, beard trims, hot towel shaves and women's short haircuts. Open since 2019.
 
 ## Business details
 - Address: 7 South Clerk Street, Edinburgh, EH8 9JD, United Kingdom
@@ -14,15 +14,17 @@
 - Area: Newington / Southside, a short walk from the University of Edinburgh's central campus
 
 ## Services and prices
-- Men's student haircut - £15 (standard men's haircut is £17)
-- Men's haircut - £17
-- Kids haircut (under 10) - £14
-- OAP (over 65) haircut - £14
+Free hot towel with every service except kids' haircuts.
+- Men's haircut - £20
+- Men's student haircut - £18
+- OAP (over 65) haircut - £16
 - All-over, clippers only - £13
-- Skin fade - £20
-- Zero fade - £18
-- Scissors cut - £18
-- Men's long haircut - £25
-- Beard trim - £10
-- Beard trim and line up - £12
-- Hot shave and hot towel - £20
+- Kids haircut (under 10) - £15
+- Skin fade - £23
+- Zero fade - £21
+- Men's long haircut - £30
+- Women's short haircut - £25
+- Women's student short haircut - £22
+- Beard trim and line up - £13
+- Italian beard - £23
+- Hot shave and hot towel - £23
