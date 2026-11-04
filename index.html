@@ -183,22 +183,23 @@
   .section-head h2{ font-size:30px; }
   .section-head p{ color:#6b6a5f; font-size:15px; max-width:38ch; }
 
-  .menu-single{ max-width:560px; }
+  .menu-group{
+    background:var(--ink); color:var(--parchment);
+    font-size:24px; padding:10px 18px; border-radius:2px; margin-bottom:6px;
+  }
+  .menu-item + .menu-group{ margin-top:32px; }
   .menu-item{
-    display:flex; align-items:baseline; gap:8px;
-    padding:12px 0;
+    display:grid; grid-template-columns:minmax(0,1fr) 138px 58px 50px;
+    align-items:center; column-gap:14px;
+    padding:13px 6px;
     font-size:16px;
     border-bottom:1px solid var(--line-dark);
   }
   .menu-item:last-child{ border-bottom:none; }
-  .menu-item .name{ white-space:nowrap; }
-  .menu-item .dots{
-    flex:1; border-bottom:1px dotted #a8a596;
-    transform:translateY(-4px);
-  }
-  .menu-item .price{ font-weight:600; white-space:nowrap; }
-  .menu-item .dur{ font-size:12.5px; color:#8b8977; display:block; margin-top:2px; }
-  .menu-item .towel{ display:inline-block; margin-left:8px; padding:1px 9px; border-radius:999px; background:rgba(124,67,34,0.12); color:var(--copper-dark); font-size:12px; font-weight:600; }
+  .menu-item .name{ font-weight:500; }
+  .menu-item .towel{ justify-self:start; padding:2px 10px; border-radius:999px; background:rgba(124,67,34,0.12); color:var(--copper-dark); font-size:12.5px; font-weight:600; white-space:nowrap; }
+  .menu-item .dur{ font-size:13.5px; color:#6b6a5f; text-align:right; white-space:nowrap; }
+  .menu-item .price{ font-weight:600; font-size:17px; text-align:right; white-space:nowrap; }
 
   .about-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
   .about-grid p{ margin-bottom:16px; color:#33362f; font-size:16px; max-width:52ch; }
@@ -236,6 +237,11 @@
   .footer-links{ display:flex; gap:20px; opacity:0.85; }
 
   @media (max-width:720px){
+    .menu-group{ font-size:21px; padding:8px 12px; }
+    .menu-item{ grid-template-columns:minmax(0,1fr) auto 40px 30px; column-gap:7px; padding:11px 0; font-size:14.5px; }
+    .menu-item .towel{ padding:2px 6px; font-size:10px; }
+    .menu-item .dur{ font-size:11.5px; }
+    .menu-item .price{ font-size:15px; }
     .header-row{ padding:14px 20px; }
     nav{ display:none; }
     .hero{ padding:60px 0 48px; }
@@ -298,19 +304,21 @@
       <p>Prices start from here — the final price can depend on hair length or condition.</p>
     </div>
     <div class="menu-single">
-      <div class="menu-item"><span class="name">Men's haircut<span class="dur">30 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£20</span></div>
-      <div class="menu-item"><span class="name">Men's student haircut<span class="dur">30 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£18</span></div>
-      <div class="menu-item"><span class="name">OAP (over 65)<span class="dur">30 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£16</span></div>
-      <div class="menu-item"><span class="name">All-over, clippers only<span class="dur">20 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£13</span></div>
-      <div class="menu-item"><span class="name">Kids haircut (under 10)<span class="dur">30 mins</span></span><span class="dots"></span><span class="price">£15</span></div>
-      <div class="menu-item"><span class="name">Skin fade<span class="dur">35 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£23</span></div>
-      <div class="menu-item"><span class="name">Zero fade<span class="dur">30 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£21</span></div>
-      <div class="menu-item"><span class="name">Men's long haircut<span class="dur">35 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£30</span></div>
-      <div class="menu-item"><span class="name">Women's short haircut<span class="dur">30 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£25</span></div>
-      <div class="menu-item"><span class="name">Women's student short haircut<span class="dur">30 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£22</span></div>
-      <div class="menu-item"><span class="name">Beard trim and line up<span class="dur">20 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£13</span></div>
-      <div class="menu-item"><span class="name">Italian beard<span class="dur">30 mins<span class="towel">+ free hot towel</span></span></span><span class="dots"></span><span class="price">£23</span></div>
-      <div class="menu-item"><span class="name">Hot shave and hot towel<span class="dur">35 mins</span></span><span class="dots"></span><span class="price">£23</span></div>
+      <h3 class="menu-group">Haircuts</h3>
+      <div class="menu-item"><span class="name">Men's Haircut</span><span class="towel">+ free hot towel</span><span class="dur">30 min</span><span class="price">£20</span></div>
+      <div class="menu-item"><span class="name">Student Haircut (Men)</span><span class="towel">+ free hot towel</span><span class="dur">30 min</span><span class="price">£18</span></div>
+      <div class="menu-item"><span class="name">OAP (over 65)</span><span class="towel">+ free hot towel</span><span class="dur">30 min</span><span class="price">£16</span></div>
+      <div class="menu-item"><span class="name">All-over (Clipper Only)</span><span class="towel">+ free hot towel</span><span class="dur">20 min</span><span class="price">£13</span></div>
+      <div class="menu-item"><span class="name">Kids Haircut (under 10)</span><span></span><span class="dur">30 min</span><span class="price">£15</span></div>
+      <div class="menu-item"><span class="name">Skin Fade</span><span class="towel">+ free hot towel</span><span class="dur">35 min</span><span class="price">£23</span></div>
+      <div class="menu-item"><span class="name">Zero Fade</span><span class="towel">+ free hot towel</span><span class="dur">30 min</span><span class="price">£21</span></div>
+      <div class="menu-item"><span class="name">Men's Long Haircut</span><span class="towel">+ free hot towel</span><span class="dur">35 min</span><span class="price">£30</span></div>
+      <div class="menu-item"><span class="name">Women's Short Haircut</span><span class="towel">+ free hot towel</span><span class="dur">30 min</span><span class="price">£25</span></div>
+      <div class="menu-item"><span class="name">Student Short Haircut (Women)</span><span class="towel">+ free hot towel</span><span class="dur">30 min</span><span class="price">£22</span></div>
+      <h3 class="menu-group">Beard &amp; shave</h3>
+      <div class="menu-item"><span class="name">Beard Trim &amp; Line Up</span><span class="towel">+ free hot towel</span><span class="dur">20 min</span><span class="price">£13</span></div>
+      <div class="menu-item"><span class="name">Italian Beard</span><span class="towel">+ free hot towel</span><span class="dur">30 min</span><span class="price">£23</span></div>
+      <div class="menu-item"><span class="name">Hot Shave &amp; Hot Towel</span><span></span><span class="dur">35 min</span><span class="price">£23</span></div>
     </div>
   </div>
 </section>
